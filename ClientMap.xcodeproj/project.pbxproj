@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A421388B2118814D0057366C /* ClientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A421388A2118814D0057366C /* ClientListViewController.swift */; };
 		A4252803211094D00063D3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4252802211094D00063D3AF /* AppDelegate.swift */; };
 		A4252805211094D00063D3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4252804211094D00063D3AF /* ViewController.swift */; };
 		A4252808211094D00063D3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4252806211094D00063D3AF /* Main.storyboard */; };
 		A425280A211094D10063D3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4252809211094D10063D3AF /* Assets.xcassets */; };
 		A425280D211094D10063D3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A425280B211094D10063D3AF /* LaunchScreen.storyboard */; };
+		AC2882CEC793FF36D670B184 /* Pods_ClientMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEDE8A7EAA0A6843E303A3D /* Pods_ClientMap.framework */; };
+		D9BCEED32124035F004A4B1D /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED12124035E004A4B1D /* ClientModel.swift */; };
+		D9BCEED42124035F004A4B1D /* MstCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED22124035F004A4B1D /* MstCodeModel.swift */; };
+		D9BCEED72124136E004A4B1D /* MstCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED52124136E004A4B1D /* MstCodeManager.swift */; };
+		D9BCEED82124136E004A4B1D /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED62124136E004A4B1D /* ClientManager.swift */; };
+		D9BCEEDA212413C3004A4B1D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED9212413C3004A4B1D /* DataManager.swift */; };
+		D9D4B96621217C67009BD3FD /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4B96521217C66009BD3FD /* ContactListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74C7EE65339B8401CACB07F8 /* Pods-ClientMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap.debug.xcconfig"; sourceTree = "<group>"; };
+		9DEDE8A7EAA0A6843E303A3D /* Pods_ClientMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A421388A2118814D0057366C /* ClientListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientListViewController.swift; sourceTree = "<group>"; };
 		A42527FF211094D00063D3AF /* ClientMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4252802211094D00063D3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4252804211094D00063D3AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,13 @@
 		A4252809211094D10063D3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A425280C211094D10063D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A425280E211094D10063D3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5828AF52EB50816CF080F4D /* Pods-ClientMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap.release.xcconfig"; sourceTree = "<group>"; };
+		D9BCEED12124035E004A4B1D /* ClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		D9BCEED22124035F004A4B1D /* MstCodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MstCodeModel.swift; sourceTree = "<group>"; };
+		D9BCEED52124136E004A4B1D /* MstCodeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MstCodeManager.swift; sourceTree = "<group>"; };
+		D9BCEED62124136E004A4B1D /* ClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+		D9BCEED9212413C3004A4B1D /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D9D4B96521217C66009BD3FD /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2882CEC793FF36D670B184 /* Pods_ClientMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187AE1CC785469085D4F2C02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74C7EE65339B8401CACB07F8 /* Pods-ClientMap.debug.xcconfig */,
+				D5828AF52EB50816CF080F4D /* Pods-ClientMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E1D61F9642299773342F289 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DEDE8A7EAA0A6843E303A3D /* Pods_ClientMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A42527F6211094D00063D3AF = {
 			isa = PBXGroup;
 			children = (
 				A4252801211094D00063D3AF /* ClientMap */,
 				A4252800211094D00063D3AF /* Products */,
+				187AE1CC785469085D4F2C02 /* Pods */,
+				4E1D61F9642299773342F289 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +92,37 @@
 		A4252801211094D00063D3AF /* ClientMap */ = {
 			isa = PBXGroup;
 			children = (
+				D9BCEED021240254004A4B1D /* Manager */,
+				D9BCEECF21240245004A4B1D /* Model */,
+				D9D4B96521217C66009BD3FD /* ContactListViewController.swift */,
 				A4252802211094D00063D3AF /* AppDelegate.swift */,
 				A4252804211094D00063D3AF /* ViewController.swift */,
+				A421388A2118814D0057366C /* ClientListViewController.swift */,
 				A4252806211094D00063D3AF /* Main.storyboard */,
 				A4252809211094D10063D3AF /* Assets.xcassets */,
 				A425280B211094D10063D3AF /* LaunchScreen.storyboard */,
 				A425280E211094D10063D3AF /* Info.plist */,
 			);
 			path = ClientMap;
+			sourceTree = "<group>";
+		};
+		D9BCEECF21240245004A4B1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9BCEED12124035E004A4B1D /* ClientModel.swift */,
+				D9BCEED22124035F004A4B1D /* MstCodeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9BCEED021240254004A4B1D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D9BCEED9212413C3004A4B1D /* DataManager.swift */,
+				D9BCEED62124136E004A4B1D /* ClientManager.swift */,
+				D9BCEED52124136E004A4B1D /* MstCodeManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4252811211094D10063D3AF /* Build configuration list for PBXNativeTarget "ClientMap" */;
 			buildPhases = (
+				DD1F88C9A8F853EF1E91219B /* [CP] Check Pods Manifest.lock */,
 				A42527FB211094D00063D3AF /* Sources */,
 				A42527FC211094D00063D3AF /* Frameworks */,
 				A42527FD211094D00063D3AF /* Resources */,
+				4273F2632A4B6D2F7A49B6A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +193,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4273F2632A4B6D2F7A49B6A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLiteSwift3/SQLiteSwift3.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLiteSwift3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1F88C9A8F853EF1E91219B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClientMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A42527FB211094D00063D3AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BCEED82124136E004A4B1D /* ClientManager.swift in Sources */,
+				A421388B2118814D0057366C /* ClientListViewController.swift in Sources */,
+				D9BCEED42124035F004A4B1D /* MstCodeModel.swift in Sources */,
+				D9D4B96621217C67009BD3FD /* ContactListViewController.swift in Sources */,
+				D9BCEED72124136E004A4B1D /* MstCodeManager.swift in Sources */,
+				D9BCEED32124035F004A4B1D /* ClientModel.swift in Sources */,
 				A4252805211094D00063D3AF /* ViewController.swift in Sources */,
+				D9BCEEDA212413C3004A4B1D /* DataManager.swift in Sources */,
 				A4252803211094D00063D3AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +389,7 @@
 		};
 		A4252812211094D10063D3AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C7EE65339B8401CACB07F8 /* Pods-ClientMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +408,7 @@
 		};
 		A4252813211094D10063D3AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5828AF52EB50816CF080F4D /* Pods-ClientMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
