@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A421388B2118814D0057366C /* ClientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A421388A2118814D0057366C /* ClientListViewController.swift */; };
 		A4252803211094D00063D3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4252802211094D00063D3AF /* AppDelegate.swift */; };
-		A4252805211094D00063D3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4252804211094D00063D3AF /* ViewController.swift */; };
+		A4252805211094D00063D3AF /* ClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4252804211094D00063D3AF /* ClientViewController.swift */; };
 		A4252808211094D00063D3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4252806211094D00063D3AF /* Main.storyboard */; };
 		A425280A211094D10063D3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4252809211094D10063D3AF /* Assets.xcassets */; };
 		A425280D211094D10063D3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A425280B211094D10063D3AF /* LaunchScreen.storyboard */; };
 		AC2882CEC793FF36D670B184 /* Pods_ClientMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEDE8A7EAA0A6843E303A3D /* Pods_ClientMap.framework */; };
+		D9AC8C702126B08400376733 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C6E2126B08400376733 /* ClientTableViewCell.swift */; };
+		D9AC8C712126B08400376733 /* ClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AC8C6F2126B08400376733 /* ClientTableViewCell.xib */; };
+		D9AC8C7C2127008B00376733 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C732127008A00376733 /* Extension.swift */; };
+		D9AC8C7D2127008B00376733 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C742127008A00376733 /* ButtonTableViewCell.swift */; };
+		D9AC8C7E2127008B00376733 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C752127008A00376733 /* Common.swift */; };
+		D9AC8C7F2127008B00376733 /* SelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C762127008A00376733 /* SelectTableViewCell.swift */; };
+		D9AC8C802127008B00376733 /* CodeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C772127008A00376733 /* CodeNameViewController.swift */; };
+		D9AC8C812127008B00376733 /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AC8C782127008B00376733 /* InputTableViewCell.xib */; };
+		D9AC8C822127008B00376733 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C792127008B00376733 /* InputTableViewCell.swift */; };
+		D9AC8C832127008B00376733 /* SelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AC8C7A2127008B00376733 /* SelectTableViewCell.xib */; };
+		D9AC8C842127008B00376733 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AC8C7B2127008B00376733 /* ButtonTableViewCell.xib */; };
+		D9AC8C862127033100376733 /* ClientEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C852127033000376733 /* ClientEditViewController.swift */; };
 		D9BCEED32124035F004A4B1D /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED12124035E004A4B1D /* ClientModel.swift */; };
 		D9BCEED42124035F004A4B1D /* MstCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED22124035F004A4B1D /* MstCodeModel.swift */; };
 		D9BCEED72124136E004A4B1D /* MstCodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCEED52124136E004A4B1D /* MstCodeManager.swift */; };
@@ -25,15 +36,26 @@
 /* Begin PBXFileReference section */
 		74C7EE65339B8401CACB07F8 /* Pods-ClientMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap.debug.xcconfig"; sourceTree = "<group>"; };
 		9DEDE8A7EAA0A6843E303A3D /* Pods_ClientMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A421388A2118814D0057366C /* ClientListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientListViewController.swift; sourceTree = "<group>"; };
 		A42527FF211094D00063D3AF /* ClientMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4252802211094D00063D3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4252804211094D00063D3AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4252804211094D00063D3AF /* ClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewController.swift; sourceTree = "<group>"; };
 		A4252807211094D00063D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4252809211094D10063D3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A425280C211094D10063D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A425280E211094D10063D3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5828AF52EB50816CF080F4D /* Pods-ClientMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap.release.xcconfig"; sourceTree = "<group>"; };
+		D9AC8C6E2126B08400376733 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		D9AC8C6F2126B08400376733 /* ClientTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTableViewCell.xib; sourceTree = "<group>"; };
+		D9AC8C732127008A00376733 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D9AC8C742127008A00376733 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		D9AC8C752127008A00376733 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		D9AC8C762127008A00376733 /* SelectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTableViewCell.swift; sourceTree = "<group>"; };
+		D9AC8C772127008A00376733 /* CodeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeNameViewController.swift; sourceTree = "<group>"; };
+		D9AC8C782127008B00376733 /* InputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
+		D9AC8C792127008B00376733 /* InputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		D9AC8C7A2127008B00376733 /* SelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTableViewCell.xib; sourceTree = "<group>"; };
+		D9AC8C7B2127008B00376733 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		D9AC8C852127033000376733 /* ClientEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientEditViewController.swift; sourceTree = "<group>"; };
 		D9BCEED12124035E004A4B1D /* ClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
 		D9BCEED22124035F004A4B1D /* MstCodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MstCodeModel.swift; sourceTree = "<group>"; };
 		D9BCEED52124136E004A4B1D /* MstCodeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MstCodeManager.swift; sourceTree = "<group>"; };
@@ -74,6 +96,7 @@
 		A42527F6211094D00063D3AF = {
 			isa = PBXGroup;
 			children = (
+				D9AC8C722127003400376733 /* Common */,
 				A4252801211094D00063D3AF /* ClientMap */,
 				A4252800211094D00063D3AF /* Products */,
 				187AE1CC785469085D4F2C02 /* Pods */,
@@ -92,18 +115,36 @@
 		A4252801211094D00063D3AF /* ClientMap */ = {
 			isa = PBXGroup;
 			children = (
+				D9AC8C852127033000376733 /* ClientEditViewController.swift */,
+				D9AC8C6E2126B08400376733 /* ClientTableViewCell.swift */,
+				D9AC8C6F2126B08400376733 /* ClientTableViewCell.xib */,
 				D9BCEED021240254004A4B1D /* Manager */,
 				D9BCEECF21240245004A4B1D /* Model */,
 				D9D4B96521217C66009BD3FD /* ContactListViewController.swift */,
 				A4252802211094D00063D3AF /* AppDelegate.swift */,
-				A4252804211094D00063D3AF /* ViewController.swift */,
-				A421388A2118814D0057366C /* ClientListViewController.swift */,
+				A4252804211094D00063D3AF /* ClientViewController.swift */,
 				A4252806211094D00063D3AF /* Main.storyboard */,
 				A4252809211094D10063D3AF /* Assets.xcassets */,
 				A425280B211094D10063D3AF /* LaunchScreen.storyboard */,
 				A425280E211094D10063D3AF /* Info.plist */,
 			);
 			path = ClientMap;
+			sourceTree = "<group>";
+		};
+		D9AC8C722127003400376733 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D9AC8C742127008A00376733 /* ButtonTableViewCell.swift */,
+				D9AC8C7B2127008B00376733 /* ButtonTableViewCell.xib */,
+				D9AC8C772127008A00376733 /* CodeNameViewController.swift */,
+				D9AC8C752127008A00376733 /* Common.swift */,
+				D9AC8C732127008A00376733 /* Extension.swift */,
+				D9AC8C792127008B00376733 /* InputTableViewCell.swift */,
+				D9AC8C782127008B00376733 /* InputTableViewCell.xib */,
+				D9AC8C762127008A00376733 /* SelectTableViewCell.swift */,
+				D9AC8C7A2127008B00376733 /* SelectTableViewCell.xib */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		D9BCEECF21240245004A4B1D /* Model */ = {
@@ -185,8 +226,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AC8C812127008B00376733 /* InputTableViewCell.xib in Resources */,
+				D9AC8C832127008B00376733 /* SelectTableViewCell.xib in Resources */,
 				A425280D211094D10063D3AF /* LaunchScreen.storyboard in Resources */,
+				D9AC8C842127008B00376733 /* ButtonTableViewCell.xib in Resources */,
 				A425280A211094D10063D3AF /* Assets.xcassets in Resources */,
+				D9AC8C712126B08400376733 /* ClientTableViewCell.xib in Resources */,
 				A4252808211094D00063D3AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,14 +285,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9BCEED82124136E004A4B1D /* ClientManager.swift in Sources */,
-				A421388B2118814D0057366C /* ClientListViewController.swift in Sources */,
+				D9AC8C7E2127008B00376733 /* Common.swift in Sources */,
 				D9BCEED42124035F004A4B1D /* MstCodeModel.swift in Sources */,
+				D9AC8C7D2127008B00376733 /* ButtonTableViewCell.swift in Sources */,
 				D9D4B96621217C67009BD3FD /* ContactListViewController.swift in Sources */,
+				D9AC8C822127008B00376733 /* InputTableViewCell.swift in Sources */,
+				D9AC8C7C2127008B00376733 /* Extension.swift in Sources */,
 				D9BCEED72124136E004A4B1D /* MstCodeManager.swift in Sources */,
 				D9BCEED32124035F004A4B1D /* ClientModel.swift in Sources */,
-				A4252805211094D00063D3AF /* ViewController.swift in Sources */,
+				D9AC8C802127008B00376733 /* CodeNameViewController.swift in Sources */,
+				A4252805211094D00063D3AF /* ClientViewController.swift in Sources */,
 				D9BCEEDA212413C3004A4B1D /* DataManager.swift in Sources */,
+				D9AC8C702126B08400376733 /* ClientTableViewCell.swift in Sources */,
 				A4252803211094D00063D3AF /* AppDelegate.swift in Sources */,
+				D9AC8C862127033100376733 /* ClientEditViewController.swift in Sources */,
+				D9AC8C7F2127008B00376733 /* SelectTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DXNNAFSCB9;
 				INFOPLIST_FILE = ClientMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DXNNAFSCB9;
 				INFOPLIST_FILE = ClientMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
