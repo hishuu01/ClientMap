@@ -13,6 +13,8 @@
 		A425280A211094D10063D3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4252809211094D10063D3AF /* Assets.xcassets */; };
 		A425280D211094D10063D3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A425280B211094D10063D3AF /* LaunchScreen.storyboard */; };
 		AC2882CEC793FF36D670B184 /* Pods_ClientMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEDE8A7EAA0A6843E303A3D /* Pods_ClientMap.framework */; };
+		D9837977212C3D1800B0A1C5 /* ClientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9837976212C3D1800B0A1C5 /* ClientListViewController.swift */; };
+		D9837979212C3D4F00B0A1C5 /* ClientMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9837978212C3D4F00B0A1C5 /* ClientMapViewController.swift */; };
 		D9AC8C702126B08400376733 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C6E2126B08400376733 /* ClientTableViewCell.swift */; };
 		D9AC8C712126B08400376733 /* ClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AC8C6F2126B08400376733 /* ClientTableViewCell.xib */; };
 		D9AC8C7C2127008B00376733 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC8C732127008A00376733 /* Extension.swift */; };
@@ -44,6 +46,8 @@
 		A425280C211094D10063D3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A425280E211094D10063D3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5828AF52EB50816CF080F4D /* Pods-ClientMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClientMap/Pods-ClientMap.release.xcconfig"; sourceTree = "<group>"; };
+		D9837976212C3D1800B0A1C5 /* ClientListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientListViewController.swift; sourceTree = "<group>"; };
+		D9837978212C3D4F00B0A1C5 /* ClientMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMapViewController.swift; sourceTree = "<group>"; };
 		D9AC8C6E2126B08400376733 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
 		D9AC8C6F2126B08400376733 /* ClientTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientTableViewCell.xib; sourceTree = "<group>"; };
 		D9AC8C732127008A00376733 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				D9D4B96521217C66009BD3FD /* ContactListViewController.swift */,
 				A4252802211094D00063D3AF /* AppDelegate.swift */,
 				A4252804211094D00063D3AF /* ClientViewController.swift */,
+				D9837976212C3D1800B0A1C5 /* ClientListViewController.swift */,
+				D9837978212C3D4F00B0A1C5 /* ClientMapViewController.swift */,
 				A4252806211094D00063D3AF /* Main.storyboard */,
 				A4252809211094D10063D3AF /* Assets.xcassets */,
 				A425280B211094D10063D3AF /* LaunchScreen.storyboard */,
@@ -300,6 +306,8 @@
 				A4252803211094D00063D3AF /* AppDelegate.swift in Sources */,
 				D9AC8C862127033100376733 /* ClientEditViewController.swift in Sources */,
 				D9AC8C7F2127008B00376733 /* SelectTableViewCell.swift in Sources */,
+				D9837979212C3D4F00B0A1C5 /* ClientMapViewController.swift in Sources */,
+				D9837977212C3D1800B0A1C5 /* ClientListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

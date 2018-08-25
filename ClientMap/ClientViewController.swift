@@ -8,98 +8,76 @@
 
 import UIKit
 
-class ClientViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ClientViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
 
-    var itemTable: UITableView?
-    var ClientList = Array<ClientModel>()
-    var countArray: Array<Int> = [4,1]
+    var pageViewController: UIPageViewController?
+    var pageNo: Int = 0
+    var pageViews = Array<UIViewController>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "訪問顧客"
-
+        self.navigationController?.hidesBarsOnSwipe = true
         installUI()
-        installNavigationItem()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        ClientList = ClientManager.find()
-        itemTable?.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func installUI() {
-        itemTable = UITableView()
-        self.view.addSubview(itemTable!)
-        itemTable?.delegate = self
-        itemTable?.dataSource = self
-        //itemCell?.separatorStyle = UITableViewCellSeparatorStyle.none
-        itemTable?.snp.makeConstraints({ (maker) in
-            maker.top.equalTo(0)
-            maker.left.equalTo(0)
-            maker.right.equalTo(0)
-            maker.bottom.equalTo(0)
-        })
+        let pageControllerIdentifierList : [String] = [
+            "list0",
+            "map0"
+        ]
         
-        //定義したcellを登録
-        itemTable!.register(UINib.init(nibName: "ClientTableViewCell", bundle: nil), forCellReuseIdentifier: "ClientCellId")
-    }
-    
-    func installNavigationItem() {
-        let addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(toClientList))
-        let newButtonItem = UIBarButtonItem(title: "新規", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.NewClient))
-        self.navigationItem.rightBarButtonItems = [addButtonItem,newButtonItem]
-    }
-    
-    @objc func NewClient() {
-        let model = ClientModel()
-        let editView = ClientEditViewController()
-        editView.Detail = model
-        self.navigationController!.pushViewController(editView, animated: true)
-    }
-    
-    @objc func toClientList(){
-        let contactList = ContactListViewController()
-        self.navigationController!.pushViewController(contactList, animated: true)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ClientList.count
-    }
-    
-    //行高さ
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
-    }
-    //设置列表的分区数
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    //行表示する
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        let cell: ClientTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ClientCellId", for: indexPath) as! ClientTableViewCell
-
-        let model = ClientList[indexPath.row]
-        cell.ClientName.text = model.clientName!
-        cell.TelNo.text = model.telNo!
-        cell.Address.text = model.address!
-        if model.visited! == "1" {
-            cell.isVisited.text = "済"
+        pageControllerIdentifierList.forEach{ viewControllerName in
+            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(viewControllerName)")
+            pageViews.append(viewController)
         }
-        return cell
+        
+        self.dataSource = self
+        self.delegate = self
+        self.setViewControllers([pageViews[0]], direction: .forward, animated: true, completion: {done in })
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let model = ClientList[indexPath.row]
-        let editView = ClientEditViewController()
-        editView.Detail = model
-        self.navigationController!.pushViewController(editView, animated: true)
+    // MARK: - Page View Controller Data Source
+    //这个协议方法会在用户向前翻页时调用 这里需要将要展示的视图控制器返回 如果返回nil 则不能够再向前翻页
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        var idx = viewController.view.tag
+        if idx > 0 {
+            idx -= 1
+            self.pageNo = idx
+            return pageViews[idx]
+        }
+        return nil
     }
+    //这个协议方法会在用户向后翻页时调用 这里需要将要展示的视图控制器返回 如果返回nil 则不能够在向后翻页
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        var idx = viewController.view.tag
+        if idx < pageViews.count - 1 {
+            idx += 1
+            self.pageNo = idx
+            return pageViews[idx]
+        }
+        return nil
+    }
+    //设置页码数
+    func presentationCount(for pageViewController: UIPageViewController) -> Int{
+        return pageViews.count
+    }
+    //设置出初始选中的页码点
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int{
+        return self.pageNo
+    }
+
 }
 
